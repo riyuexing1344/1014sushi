@@ -1,0 +1,5 @@
+# large-files/ 下的 .bin 是按字节切开的分片，必须按二进制原样存取。
+# git 判文本/二进制只嗅探前 8000 字节有无 NUL，.bin 后缀它根本不看；
+# 本机 core.autocrlf=true，不加这条分片会被行尾转换静默改坏（楞严项目实测）。
+# binary = -text -diff -merge：不转行尾、不做 diff、不尝试合并。
+large-files/**/*.bin binary

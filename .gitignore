@@ -1,0 +1,4 @@
+# 超过 1 MB 的本地源文件不直接入库（公司代理限制单次上传 ~1MB），
+# 通过 large-files/ 分片同步，克隆后运行:
+#   D:\software\python31210\install\python.exe scripts\restore_large_files.py
+乌台诗案造就苏东坡.m4a

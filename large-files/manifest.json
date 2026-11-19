@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "chunkSize": 900000,
+  "files": [
+    {
+      "target": "乌台诗案造就苏东坡.m4a",
+      "size": 13625470,
+      "sha256": "7dbeb65df41a3c5a01b30cf45f9a7436cc220d85d9399943cfb6de34a0cf0efd",
+      "parts": [
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-000.bin",
+          "size": 900000,
+          "sha256": "64f34e90c2cea1979755f85b2b718cb8ae1c10d7e28a4d4cb631a6a268419adf"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-001.bin",
+          "size": 900000,
+          "sha256": "7107d3063c8a31759df448cad33b1531297900db6d1ff77fe4c4e2913415d741"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-002.bin",
+          "size": 900000,
+          "sha256": "02582fe29d060b34b5ff9c5ec858b5500dacf7a9a05b1f4d94fe5e20c7710967"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-003.bin",
+          "size": 900000,
+          "sha256": "e99d35c59fee6757aece9a7a7b99997c5d18acc316ac8fd3122eabcb8d81fd38"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-004.bin",
+          "size": 900000,
+          "sha256": "b6971122302dd807cf808f8b70e3b7e64e566ee45530da133138667cc2a6b12d"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-005.bin",
+          "size": 900000,
+          "sha256": "00e883df719cad1ef4009decc8b434ddd496864a6ebbb561a7690295ee9d5ce3"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-006.bin",
+          "size": 900000,
+          "sha256": "e361df0a75b48f480af83ae317fd1ec5bb7297bb0030ff4b1c71b70ff1c0a652"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-007.bin",
+          "size": 900000,
+          "sha256": "e1007be1da3fa4cf90c5b439c460eab3fa19feb27cb4eff8050f88bf9e78d819"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-008.bin",
+          "size": 900000,
+          "sha256": "c1b7c268bb188177cd66a1012c60264375600a371629947a1253428da77fe0cd"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-009.bin",
+          "size": 900000,
+          "sha256": "d63190fac4d3a71a2e7205938f0afe98faa0f8330021f19b88e4f64446044e7b"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-010.bin",
+          "size": 900000,
+          "sha256": "9e081c44a7fcc15f5855207dcf08e2322df99e6d9aaf0b90acabd8621ec609a1"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-011.bin",
+          "size": 900000,
+          "sha256": "b612f7a9f5db258e48d03a317b354be0a4a593c3bcb533ac1878d7bc29caa9a4"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-012.bin",
+          "size": 900000,
+          "sha256": "095fc4dbae4d260731481aaaa7af1e2db9038054632c16f297ab08299e481323"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-013.bin",
+          "size": 900000,
+          "sha256": "bd3dae9a98cffb6c52a5184ab289604c33c51f89ef005dab33e2bd948581b21d"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-014.bin",
+          "size": 900000,
+          "sha256": "82aebc705e9baf1086df6034fb0a08aec11b1b893f40ee05b28e9342fdb2d6ab"
+        },
+        {
+          "path": "large-files/乌台诗案造就苏东坡.m4a.parts/part-015.bin",
+          "size": 125470,
+          "sha256": "1051a1d495e5995701c333beb0f01316f9d7b3db01a60c40e371265cca4783d6"
+        }
+      ]
+    }
+  ]
+}
