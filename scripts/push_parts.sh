@@ -23,10 +23,23 @@ while IFS= read -r rel; do
   git -C "$R" commit -q -m "音频分片 $rel（900KB/片绕代理1MB上传限制）" || { echo "FAIL commit $rel"; fail=1; break; }
   after=$(git -C "$R" rev-parse HEAD)
   [ "$before" != "$after" ] || { echo "FAIL head-not-advanced $rel"; fail=1; break; }
-  if ! git -C "$R" push origin main > /tmp/push_$name.log 2>&1; then
+  # push 遇代理瞬断同样重试；已提交但未推上去的片重跑脚本会被跳过（已成为 tracked），
+  # 所以必须在这里重试到底，不能留给下一次运行
+  pushed=0
+  for attempt in 1 2 3; do
+    if git -C "$R" push origin main > /tmp/push_$name.log 2>&1; then pushed=1; break; fi
+    echo "retry push $rel (attempt $attempt)"; sleep 10
+  done
+  if [ "$pushed" -eq 0 ]; then
     echo "FAIL push $rel"; cat /tmp/push_$name.log; fail=1; break
   fi
-  remote=$(git -C "$R" ls-remote origin main | cut -f1)
+  # ls-remote 遇到代理瞬断会空返回——重试 3 次再判 mismatch，避免把网络抖动当推送失败
+  remote=""
+  for attempt in 1 2 3; do
+    remote=$(git -C "$R" ls-remote origin main 2>/dev/null | cut -f1)
+    [ -n "$remote" ] && break
+    sleep 5
+  done
   [ "$remote" = "$after" ] || { echo "FAIL remote-mismatch $rel local=$after remote=$remote"; fail=1; break; }
   ok=$((ok+1))
   echo "OK $ok $rel -> $after"
